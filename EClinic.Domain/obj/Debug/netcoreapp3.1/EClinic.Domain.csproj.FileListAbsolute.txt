@@ -1,0 +1,12 @@
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\bin\Debug\netcoreapp3.1\EClinic.Domain.deps.json
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\bin\Debug\netcoreapp3.1\EClinic.Domain.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\bin\Debug\netcoreapp3.1\EClinic.Domain.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\bin\Debug\netcoreapp3.1\EClinic.Framework.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\bin\Debug\netcoreapp3.1\EClinic.Framework.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\obj\Debug\netcoreapp3.1\EClinic.Domain.csprojAssemblyReference.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\obj\Debug\netcoreapp3.1\EClinic.Domain.AssemblyInfoInputs.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\obj\Debug\netcoreapp3.1\EClinic.Domain.AssemblyInfo.cs
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\obj\Debug\netcoreapp3.1\EClinic.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\obj\Debug\netcoreapp3.1\EClinic.Domain.csproj.CopyComplete
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\obj\Debug\netcoreapp3.1\EClinic.Domain.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Domain\obj\Debug\netcoreapp3.1\EClinic.Domain.pdb

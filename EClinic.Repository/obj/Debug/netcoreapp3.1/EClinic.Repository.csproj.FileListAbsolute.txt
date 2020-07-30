@@ -1,0 +1,17 @@
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\bin\Debug\netcoreapp3.1\EClinic.Repository.deps.json
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\bin\Debug\netcoreapp3.1\EClinic.Repository.runtimeconfig.json
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\bin\Debug\netcoreapp3.1\EClinic.Repository.runtimeconfig.dev.json
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\bin\Debug\netcoreapp3.1\EClinic.Repository.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\bin\Debug\netcoreapp3.1\EClinic.Repository.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\bin\Debug\netcoreapp3.1\EClinic.Domain.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\bin\Debug\netcoreapp3.1\EClinic.Framework.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\bin\Debug\netcoreapp3.1\EClinic.Domain.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\bin\Debug\netcoreapp3.1\EClinic.Framework.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\obj\Debug\netcoreapp3.1\EClinic.Repository.csprojAssemblyReference.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\obj\Debug\netcoreapp3.1\EClinic.Repository.AssemblyInfoInputs.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\obj\Debug\netcoreapp3.1\EClinic.Repository.AssemblyInfo.cs
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\obj\Debug\netcoreapp3.1\EClinic.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\obj\Debug\netcoreapp3.1\EClinic.Repository.csproj.CopyComplete
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\obj\Debug\netcoreapp3.1\EClinic.Repository.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\obj\Debug\netcoreapp3.1\EClinic.Repository.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Repository\obj\Debug\netcoreapp3.1\EClinic.Repository.genruntimeconfig.cache

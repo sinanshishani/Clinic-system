@@ -1,0 +1,16 @@
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\bin\Debug\netcoreapp3.1\EClinic.Api.Core.deps.json
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\bin\Debug\netcoreapp3.1\EClinic.Api.Core.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\bin\Debug\netcoreapp3.1\EClinic.Api.Core.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\bin\Debug\netcoreapp3.1\EClinic.Application.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\bin\Debug\netcoreapp3.1\EClinic.Domain.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\bin\Debug\netcoreapp3.1\EClinic.Framework.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\bin\Debug\netcoreapp3.1\EClinic.Application.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\bin\Debug\netcoreapp3.1\EClinic.Domain.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\bin\Debug\netcoreapp3.1\EClinic.Framework.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\obj\Debug\netcoreapp3.1\EClinic.Api.Core.csprojAssemblyReference.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\obj\Debug\netcoreapp3.1\EClinic.Api.Core.AssemblyInfoInputs.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\obj\Debug\netcoreapp3.1\EClinic.Api.Core.AssemblyInfo.cs
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\obj\Debug\netcoreapp3.1\EClinic.Api.Core.csproj.CoreCompileInputs.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\obj\Debug\netcoreapp3.1\EClinic.Api.Core.csproj.CopyComplete
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\obj\Debug\netcoreapp3.1\EClinic.Api.Core.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Api.Core\obj\Debug\netcoreapp3.1\EClinic.Api.Core.pdb

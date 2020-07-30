@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EClinic.Framework\EClinic.Framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Lookups\Dto\" />
+    <Folder Include="Lookups\Models\System\" />
+    <Folder Include="Lookups\Specifications\Account\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Framework\bin\Debug\netcoreapp3.1\EClinic.Framework.deps.json
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Framework\bin\Debug\netcoreapp3.1\EClinic.Framework.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Framework\bin\Debug\netcoreapp3.1\EClinic.Framework.pdb
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Framework\obj\Debug\netcoreapp3.1\EClinic.Framework.csprojAssemblyReference.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Framework\obj\Debug\netcoreapp3.1\EClinic.Framework.AssemblyInfoInputs.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Framework\obj\Debug\netcoreapp3.1\EClinic.Framework.AssemblyInfo.cs
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Framework\obj\Debug\netcoreapp3.1\EClinic.Framework.csproj.CoreCompileInputs.cache
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Framework\obj\Debug\netcoreapp3.1\EClinic.Framework.dll
+C:\Users\Sinan\source\repos\ClinicAdministration2\EClinic.Framework\obj\Debug\netcoreapp3.1\EClinic.Framework.pdb

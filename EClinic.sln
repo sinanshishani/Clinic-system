@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EClinic.Application", "EClinic.Application\EClinic.Application.csproj", "{89F22037-5276-43B9-A0B7-66668B42EAC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EClinic.Repository", "EClinic.Repository\EClinic.Repository.csproj", "{98A26388-8311-409D-A7DB-F72261A1F63E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EClinic.Domain", "EClinic.Domain\EClinic.Domain.csproj", "{79D20D6E-7784-4AA0-AF14-3CABBB54E150}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EClinic.Framework", "EClinic.Framework\EClinic.Framework.csproj", "{4B04061E-9043-4BAA-9212-D791AFBF30D8}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "EClinic-Client", "EClinic-Client\", "{F8D0A2BD-8DB4-4852-AB85-6908F3CA8839}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57973"
+		Debug.AspNetCompiler.PhysicalPath = "EClinic-Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57973\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57973"
+		Release.AspNetCompiler.PhysicalPath = "EClinic-Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57973\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57973"
+		SlnRelativePath = "EClinic-Client\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EClinic.Api", "EClinic.Api\EClinic.Api.csproj", "{33158978-C37F-4A02-BC64-53D12F0550D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EClinic.Api.Core", "EClinic.Api.Core\EClinic.Api.Core.csproj", "{51CD4CE9-4482-4973-B118-BA3A6ABAD462}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89F22037-5276-43B9-A0B7-66668B42EAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F22037-5276-43B9-A0B7-66668B42EAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F22037-5276-43B9-A0B7-66668B42EAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F22037-5276-43B9-A0B7-66668B42EAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A26388-8311-409D-A7DB-F72261A1F63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A26388-8311-409D-A7DB-F72261A1F63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A26388-8311-409D-A7DB-F72261A1F63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A26388-8311-409D-A7DB-F72261A1F63E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D20D6E-7784-4AA0-AF14-3CABBB54E150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D20D6E-7784-4AA0-AF14-3CABBB54E150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D20D6E-7784-4AA0-AF14-3CABBB54E150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D20D6E-7784-4AA0-AF14-3CABBB54E150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B04061E-9043-4BAA-9212-D791AFBF30D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B04061E-9043-4BAA-9212-D791AFBF30D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B04061E-9043-4BAA-9212-D791AFBF30D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B04061E-9043-4BAA-9212-D791AFBF30D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D0A2BD-8DB4-4852-AB85-6908F3CA8839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D0A2BD-8DB4-4852-AB85-6908F3CA8839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D0A2BD-8DB4-4852-AB85-6908F3CA8839}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D0A2BD-8DB4-4852-AB85-6908F3CA8839}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{33158978-C37F-4A02-BC64-53D12F0550D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33158978-C37F-4A02-BC64-53D12F0550D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33158978-C37F-4A02-BC64-53D12F0550D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33158978-C37F-4A02-BC64-53D12F0550D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51CD4CE9-4482-4973-B118-BA3A6ABAD462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51CD4CE9-4482-4973-B118-BA3A6ABAD462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51CD4CE9-4482-4973-B118-BA3A6ABAD462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51CD4CE9-4482-4973-B118-BA3A6ABAD462}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDFDC303-0E2C-4304-83AB-8C827A473C57}
+	EndGlobalSection
+EndGlobal
