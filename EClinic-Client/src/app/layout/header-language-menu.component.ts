@@ -1,4 +1,5 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { AppComponentBase } from 'src/shared/app-component-base';
+import { Component, OnInit, ChangeDetectionStrategy, Injector } from '@angular/core';
 
 @Component({
   selector: 'header-language-menu',
@@ -6,9 +7,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 
 })
-export class HeaderLanguageMenuComponent implements OnInit {
+export class HeaderLanguageMenuComponent extends AppComponentBase implements OnInit {
 
-  constructor() { }
+  constructor(injector: Injector) {
+    super(injector);
+   }
 
   ngOnInit(): void {
   }

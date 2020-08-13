@@ -1,11 +1,13 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutStoreService } from './layout/layout-store.service';
+import { EqualValidator } from './directives/equal-validator.directive';
+import { DigitsOnlyDirective } from './directives/digits-only.directive';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [EqualValidator, DigitsOnlyDirective],
   imports: [
     CommonModule
   ],
