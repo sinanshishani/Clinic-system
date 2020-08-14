@@ -12,6 +12,63 @@
       </div>
   </section>
   <section class="content px-2">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Search</h3>
+          </div>
+          <div class="card-body p-3">
+            <div class="row">
+              <mat-form-field class="col-2">
+                <mat-label>Reference Number</mat-label>
+                <input matInput placeholder="Ex. 231412">
+              </mat-form-field>
+              <mat-form-field class="col-2">
+                <mat-label>Patient Name</mat-label>
+                <input matInput placeholder="Ex. 231412">
+              </mat-form-field>
+              <mat-form-field class="col-2">
+                <mat-label>Phone Number</mat-label>
+                <input matInput placeholder="Ex. 231412">
+              </mat-form-field>
+              <mat-form-field class="col-2">
+                <mat-label>Email Adress</mat-label>
+                <input matInput placeholder="Ex. 231412">
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field class="col-2">
+                <mat-label>National Id</mat-label>
+                <input matInput placeholder="Ex. 231412">
+              </mat-form-field>
+              <div class="col-2">
+                <doctorDD></doctorDD>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <mat-checkbox class="example-margin">
+                  Insured ?
+                </mat-checkbox>
+              </div>
+              <div class="col-2">
+                <insuranceDD> </insuranceDD>
+              </div>
+            </div>
+            <div class="row">
+              <mat-form-field class="col-2">
+                <mat-label>File Number</mat-label>
+                <input matInput placeholder="file Number">
+              </mat-form-field>
+              <button mat-button>Search</button>
+              <button mat-button>Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="container-fluid">
           <div class="row">
                   <table mat-table [dataSource]="dataSource" matSort class="col-12 mat-elevation-z8">
