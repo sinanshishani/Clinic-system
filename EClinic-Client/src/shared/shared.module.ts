@@ -11,6 +11,9 @@ import { DigitsOnlyDirective } from './directives/digits-only.directive';
   imports: [
     CommonModule
   ],
+  exports:[
+    DigitsOnlyDirective
+  ]
 })
 export class SharedModule {
    static forRoot(): ModuleWithProviders<SharedModule> {

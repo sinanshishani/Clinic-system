@@ -14,7 +14,7 @@ const routes: Routes = [
           { path: 'home', component: HomeComponent,  /*canActivate: [AppRouteGuard] */},
           { path: 'patients', component: PatientsComponent },
           { path: 'patients/:id', component : CreateOrEditPatientComponent },
-          { path: 'patients/create', component : CreateOrEditPatientComponent},
+          { path: 'patients/add', component : CreateOrEditPatientComponent},
           // { path: 'users', component: UsersComponent, data: { permission: 'Pages.Users' },/*canActivate: [AppRouteGuard] */},
           // { path: 'roles', component: RolesComponent, data: { permission: 'Pages.Roles' }, /*canActivate: [AppRouteGuard] */ },
           // { path: 'tenants', component: TenantsComponent, data: { permission: 'Pages.Tenants' }, /*canActivate: [AppRouteGuard] */ },
