@@ -11,25 +11,25 @@
         <div class=" pl-1 pr-1 panel-body">
           <mat-form-field class="col-2">
             <mat-label>Reference Number</mat-label>
-            <input matInput placeholder="Ex. 231412">
+            <input matInput digitsOnly [(ngModel)]="referenceNumber" placeholder="Ex. 231412">
           </mat-form-field>
           <mat-form-field>
             <mat-label>National Number</mat-label>
-            <input matInput placeholder="Ex. asdasdsad">
+            <input matInput [(ngModel)]="nationalId" placeholder="Ex. asdasdsad">
           </mat-form-field>
           <mat-form-field>
             <mat-label>Patient Name</mat-label>
-            <input matInput digitsOnly placeholder="Ex. 231412">
+            <input matInput [(ngModel)]="name" placeholder="Ex. 231412">
           </mat-form-field>
 
-          <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">male</mat-radio-button>
-            <mat-radio-button value="2">female</mat-radio-button>
+          <mat-radio-group [(ngModel)]="selectedSex" aria-label="Select an option">
+            <mat-radio-button [value]=1>male</mat-radio-button>
+            <mat-radio-button [value]=2>female</mat-radio-button>
           </mat-radio-group>
 
           <mat-form-field>
             <mat-label>file numbrer </mat-label>
-            <input matInput placeholder="Ex. sadasdads">
+            <input matInput [(ngModel)]="fileNumber" placeholder="Ex. sadasdads">
           </mat-form-field>
           <mat-form-field class="pl-1 pr-1">
             <mat-label>Birthdate</mat-label>
