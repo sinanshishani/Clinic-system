@@ -6,7 +6,7 @@
   </section>
   <section class="content px-2 w-100">
     <div class="container-fluid pl-3">
-      <div class=" panel panel-default ">
+      <div class="patient panel panel-default ">
         <legend class=" pl-3 pr-3">Patient Info</legend>
         <div class=" pl-1 pr-1 panel-body">
           <mat-form-field class="col-2">
@@ -21,11 +21,13 @@
             <mat-label>Patient Name</mat-label>
             <input matInput [(ngModel)]="name" placeholder="Ex. 231412">
           </mat-form-field>
+          <div class="col-12">
+            <mat-radio-group [(ngModel)]="selectedSex" aria-label="Select an option">
+              <mat-radio-button class="mr-3" [value]=1>male</mat-radio-button>
+              <mat-radio-button [value]=2>female</mat-radio-button>
+            </mat-radio-group>
+          </div>
 
-          <mat-radio-group [(ngModel)]="selectedSex" aria-label="Select an option">
-            <mat-radio-button [value]=1>male</mat-radio-button>
-            <mat-radio-button [value]=2>female</mat-radio-button>
-          </mat-radio-group>
 
           <mat-form-field>
             <mat-label>file numbrer </mat-label>
@@ -43,11 +45,13 @@
           </mat-form-field>
 
 
-          <doctorDD></doctorDD>
+         <div class="row">
+           <doctorDD></doctorDD>
+         </div>
 
-          <mat-form-field class="pl-1 pr-1">
+          <mat-form-field class="pl-1 pr-1 w-50">
             <mat-label>Adress</mat-label>
-            <textarea matInput rows="4" cols="50"></textarea>
+            <textarea matInput rows="8" cols="120"></textarea>
           </mat-form-field>
         </div>
       </div>

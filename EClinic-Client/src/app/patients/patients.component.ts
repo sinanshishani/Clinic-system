@@ -37,7 +37,8 @@ export var ELEMENT_DATA: PatientDto[] = [
   selector: 'app-patients',
   templateUrl: './patients.component.html',
   styleUrls: ['./patients.component.scss'],
-  animations: [appModuleAnimation()]
+  animations: [appModuleAnimation()],
+
 })
 export class PatientsComponent extends AppComponentBase implements OnInit, AfterViewInit {
 
