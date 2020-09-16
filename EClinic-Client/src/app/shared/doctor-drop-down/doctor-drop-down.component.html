@@ -1,7 +1,0 @@
-<mat-form-field class="w-100">
-    <mat-label>{{l('DoctorName')}}</mat-label>
-    <mat-select [(value)]="selected" (change)="changeValue()">
-        <mat-option *ngIf="showNoneOption">None</mat-option>
-        <option *ngFor="let doctor of doctors" [value]="doctor.Value">{{doctor.Text}}</option>
-    </mat-select>
-</mat-form-field>

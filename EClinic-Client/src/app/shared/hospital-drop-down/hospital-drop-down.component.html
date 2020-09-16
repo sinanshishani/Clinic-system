@@ -1,7 +1,0 @@
-<mat-form-field>
-    <mat-label>{{l('HospitalName')}}</mat-label>
-    <mat-select [(value)]="selected" (change)="changeValue()">
-        <mat-option *ngIf="showNoneOption">None</mat-option>
-        <option *ngFor="let hospital of hospitals" [value]="hospital.Value">{{hospital.Text}}</option>
-    </mat-select>
-</mat-form-field>

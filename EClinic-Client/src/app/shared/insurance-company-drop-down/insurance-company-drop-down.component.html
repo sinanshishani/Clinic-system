@@ -1,7 +1,0 @@
-<mat-form-field class="mw-100">
-    <mat-label>{{l('InsuranceCompany')}}</mat-label>
-    <mat-select [(value)]="selected" (change)="changeValue()">
-        <mat-option *ngIf="showNoneOption">None</mat-option>
-        <option *ngFor="let company of comapnies" [value]="company.Value">{{company.Text}}</option>
-    </mat-select>
-</mat-form-field>

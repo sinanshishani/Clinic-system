@@ -1,9 +1,3 @@
-/*
-  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
-  It is not intended to be used to perform a compilation.
-
-  To learn more about this file see: https://angular.io/config/solution-tsconfig.
-*/
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -13,29 +7,17 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+    "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "module": "es2020",
     "lib": [
       "es2018",
       "dom"
-    ],
-    "typeRoots": [
-      "node_modules/@types"
-      ]
+    ]
   },
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ],
-  "include": [
-    "src/**/*.d.ts",
-    "typings.d.ts"
-  ]
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
 }

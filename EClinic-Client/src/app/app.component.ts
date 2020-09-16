@@ -1,49 +1,65 @@
-import { Component, Injector, OnInit, Renderer2 } from '@angular/core';
-import { AppComponentBase } from './../shared/app-component-base';
-//import { SignalRAspNetCoreHelper } from '@shared/helpers/SignalRAspNetCoreHelper';
-import { LayoutStoreService } from './../shared/layout/layout-store.service';
-
+import {
+  Component,
+  ChangeDetectionStrategy,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
+import { TranslationService } from './modules/i18n/translation.service';
+// language list
+import { locale as enLang } from './modules/i18n/vocabs/en';
+import { locale as chLang } from './modules/i18n/vocabs/ch';
+import { locale as esLang } from './modules/i18n/vocabs/es';
+import { locale as jpLang } from './modules/i18n/vocabs/jp';
+import { locale as deLang } from './modules/i18n/vocabs/de';
+import { locale as frLang } from './modules/i18n/vocabs/fr';
+import { SplashScreenService } from './_metronic/partials/layout/splash-screen/splash-screen.service';
+import { Router, NavigationEnd } from '@angular/router';
+import { Subscription } from 'rxjs';
 @Component({
-  templateUrl: './app.component.html'
+  // tslint:disable-next-line:component-selector
+  selector: 'body[root]',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent extends AppComponentBase implements OnInit {
-  sidebarExpanded: boolean;
+export class AppComponent implements OnInit, OnDestroy {
+  private unsubscribe: Subscription[] = []; // Read more: => https://brianflove.com/2016/12/11/anguar-2-unsubscribe-observables/
 
   constructor(
-    injector: Injector,
-    private renderer: Renderer2,
-    private _layoutStore: LayoutStoreService
+    private translationService: TranslationService,
+    private splashScreenService: SplashScreenService,
+    private router: Router
   ) {
-    super(injector);
+    // register translations
+    this.translationService.loadTranslations(
+      enLang,
+      chLang,
+      esLang,
+      jpLang,
+      deLang,
+      frLang
+    );
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    const routerSubscription = this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        // hide splash screen
+        this.splashScreenService.hide();
 
-    this.renderer.addClass(document.body, 'sidebar-mini');
+        // scroll to top on every route change
+        window.scrollTo(0, 0);
 
-    //SignalRAspNetCoreHelper.initSignalR();
-
-    // abp.event.on('abp.notifications.received', (userNotification) => {
-    //   abp.notifications.showUiNotifyForUserNotification(userNotification);
-
-    //   // Desktop notification
-    //   Push.create('AbpZeroTemplate', {
-    //     body: userNotification.notification.data.message,
-    //     icon: abp.appPath + 'assets/app-logo-small.png',
-    //     timeout: 6000,
-    //     onClick: function () {
-    //       window.focus();
-    //       this.close();
-    //     }
-    //   });
-    // });
-
-    this._layoutStore.sidebarExpanded.subscribe((value) => {
-      this.sidebarExpanded = value;
+        // to display back the body content
+        setTimeout(() => {
+          document.body.classList.add('page-loaded');
+        }, 500);
+      }
     });
+    this.unsubscribe.push(routerSubscription);
   }
 
-  toggleSidebar(): void {
-    this._layoutStore.setSidebarExpanded(!this.sidebarExpanded);
+  ngOnDestroy() {
+    this.unsubscribe.forEach((sb) => sb.unsubscribe());
   }
 }
