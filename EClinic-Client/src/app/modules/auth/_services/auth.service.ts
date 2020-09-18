@@ -8,6 +8,7 @@ import { AuthHTTPService } from './auth-http';
 import { environment } from 'src/environments/environment';
 import { Router } from '@angular/router';
 import { TokenRequest } from '../../../../shared/service-proxies/service-proxies';
+import { AppConsts } from '../../../../shared/AppConsts';
 
 @Injectable({
   providedIn: 'root',
@@ -62,7 +63,14 @@ export class AuthService implements OnDestroy {
     let tokenRequest = new TokenRequest();
     tokenRequest.username = "Admin";
     tokenRequest.password = "P@ssw0rd";
-    this.accountServiceProxy.authenticate(tokenRequest).subscribe(result => {console.log(result);})
+    this.accountServiceProxy.authenticate(tokenRequest)
+    .subscribe(result => {
+      if(result.isSuccessful){
+        localStorage.setItem(AppConsts.authorization.encryptedAuthTokenName, result.data.token);
+      }else{
+        localStorage.removeItem(AppConsts.authorization.encryptedAuthTokenName);
+      }
+      });
   }
 
   logout() {

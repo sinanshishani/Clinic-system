@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import * as ApiServiceProxies from './service-proxies';
+import { API_BASE_URL } from './service-proxies';
+import { AppConsts } from '../AppConsts';
 
 @NgModule({
   declarations: [],
@@ -13,7 +15,8 @@ import * as ApiServiceProxies from './service-proxies';
     ApiServiceProxies.AccountSurgeriesServiceProxy,
     ApiServiceProxies.AccountSurgeryProceduresServiceProxy,
     ApiServiceProxies.PatientsServiceProxy,
-    ApiServiceProxies.HospitalsServiceProxy
+    ApiServiceProxies.HospitalsServiceProxy,
+    { provide: API_BASE_URL, useFactory: () => AppConsts.remoteServiceBaseUrl },
 ]
 })
 export class ServiceProxyModule { }

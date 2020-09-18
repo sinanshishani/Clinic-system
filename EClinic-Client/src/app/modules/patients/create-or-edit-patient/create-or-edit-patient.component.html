@@ -1,0 +1,89 @@
+<div>
+    <section class="content-header mb-1">
+      <div class="container-fluid row">
+        <div class="col-4 mt-2 ml-2 ">
+  
+          <h2>{{title}}</h2>
+        </div>
+        <div class="col-3 mt-2">
+          <button mat-flat-button color="primary" (click)="createPatient()" [disabled]="!patient.name || !patient.nationalId || !patient.birthdate || !patient.phoneNumber || !patient.sex || !patient.doctorId">Create <i class="fa fa-plus mr-1 ml-1" aria-hidden="true"></i></button>
+          <button mat-flat-button color="accent" [routerLink]="['../']" class="ml-1">Cancel</button>
+        </div>
+      </div>
+  
+    </section>
+    <section class="content px-2 w-100">
+      <div class="container-fluid pl-3">
+        <div class="patient panel panel-default ">
+          <!-- <legend class=" pl-3 pr-3">Patient Info</legend> -->
+          <div class=" pl-1 pr-1 panel-body">
+            <mat-form-field class="col-2">
+              <mat-label>Reference Number</mat-label>
+              <input matInput digitsOnly [(ngModel)]="patient.refernceNumber" disabled placeholder="Ex. 231412">
+            </mat-form-field>
+            <mat-form-field class="mr-1 col-2">
+              <mat-label>National Number</mat-label>
+              <input matInput [(ngModel)]="patient.nationalId" placeholder="Ex. asdasdsad">
+            </mat-form-field>
+            <mat-form-field class="col-2">
+              <mat-label>Patient Name</mat-label>
+              <input matInput [(ngModel)]="patient.name" placeholder="Ex. 231412">
+            </mat-form-field>
+            <div class="col-12">
+              <mat-radio-group [(ngModel)]="patient.sex" aria-label="Select an option">
+                <mat-radio-button class="mr-3" [value]='1'>male</mat-radio-button>
+                <mat-radio-button [value]='2'>female</mat-radio-button>
+              </mat-radio-group>
+            </div>
+  
+  
+            <mat-form-field class="col-2">
+              <mat-label>file numbrer </mat-label>
+              <input matInput [(ngModel)]="patient.fileNumber" placeholder="Ex. sadasdads">
+            </mat-form-field>
+            <mat-form-field class="pl-1 pr-1 col-2">
+              <mat-label>Birthdate</mat-label>
+              <input matInput [value]="patient.birthdate" (dateChange)="addEvent($event)" [matDatepicker]="picker">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field class="col-2">
+              <mat-label>Phone numbrer </mat-label>
+              <input matInput [(ngModel)]="patient.phoneNumber" digitsOnly placeholder="Ex. 00060606066">
+            </mat-form-field>
+  
+  
+           <div class="row">
+            <mat-form-field class="col-2">
+              <mat-label>Email Adress</mat-label>
+              <input matInput [(ngModel)]="patient.email" type="email" [email]="true" placeholder="Ex. example@domain.com">
+            </mat-form-field>
+  
+             <!-- <doctorDD [(selected)]="patient.doctorId" [showNoneOption]="false" class="col-2"></doctorDD> -->
+  
+           </div>
+           <mat-form-field class="pl-1 pr-1 w-50">
+            <mat-label>Location Adress</mat-label>
+            <textarea matInput [(ngModel)]="patient.locationAdress" rows="8" cols="120"></textarea>
+          </mat-form-field>
+           <div class="row ml-1">
+            <mat-checkbox [(ngModel)]="patient.isInsured">
+                Is Insured
+            </mat-checkbox>
+           </div>
+           <div class="row ml-1">
+            <button mat-stroked-button color="primary" (click)="toggleAdditionalInfo()" > Additional Information</button>
+           </div>
+  
+  
+          </div>
+        </div>
+        <patientAdditionalInfo *ngIf="showAdditionalInfo" (closeEvent)="toggleAdditionalInfo()"></patientAdditionalInfo>
+        <div *ngIf="patient.isInsured" class="w-75 pb-3">
+          <patientInsurance ></patientInsurance>
+        </div>
+      </div>
+  
+    </section>
+  </div>
+  

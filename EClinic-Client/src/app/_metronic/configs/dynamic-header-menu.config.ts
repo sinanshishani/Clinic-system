@@ -8,6 +8,13 @@ export const DynamicHeaderMenuConfig = {
       translate: 'MENU.DASHBOARD',
     },
     {
+      title: 'Patients',
+      root: true,
+      alignment: 'left',
+      page: '/patients',
+      translate: 'MENU.PATIENTS',
+    },
+    {
       title: 'Builder',
       root: true,
       alignment: 'left',

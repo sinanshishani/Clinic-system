@@ -3,6 +3,7 @@ import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { JwtModule } from "@auth0/angular-jwt";
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ClipboardModule } from 'ngx-clipboard';
 import { TranslateModule } from '@ngx-translate/core';
@@ -21,6 +22,7 @@ import json from 'highlight.js/lib/languages/json';
 import scss from 'highlight.js/lib/languages/scss';
 import typescript from 'highlight.js/lib/languages/typescript';
 import { SplashScreenModule } from './_metronic/partials/layout/splash-screen/splash-screen.module';
+import { AppConsts } from '../shared/AppConsts';
 
 function appInitializer(authService: AuthService) {
   return () => {
@@ -43,6 +45,10 @@ export function getHighlightLanguages() {
   ];
 }
 
+export function tokenGetter() {
+  return localStorage.getItem(AppConsts.authorization.encryptedAuthTokenName);
+}
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -62,7 +68,14 @@ export function getHighlightLanguages() {
     AppRoutingModule,
     InlineSVGModule.forRoot(),
     NgbModule,
-    SharedModule
+    SharedModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: tokenGetter,
+        allowedDomains: [AppConsts.remoteServiceBaseUrl],
+        disallowedRoutes: ["http://example.com/examplebadroute/"],
+      },
+    }),
   ],
   providers: [
     {

@@ -1,0 +1,204 @@
+<div style="position:relative;" class="border pt-4 px-2 pb-2 d-flex justify-content-around">
+    <div class="cursor close-icon" (click)="closeSection()"><i class="fas fa-minus"></i></div>
+    <div class="col-6">
+  
+  
+      <mat-card class="card-inner mt-2">
+  
+        <mat-card-header>
+          <mat-card-title>General Info</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-form-field class="w-100">
+            <mat-label>Nationality</mat-label>
+            <mat-select>
+              <mat-option value='0'>None</mat-option>
+              <mat-option>Text</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="w-100">
+            <mat-label>Social Status</mat-label>
+            <mat-select>
+              <mat-option value='0'>None</mat-option>
+              <mat-option>Single</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="w-100">
+            <mat-label>Family size</mat-label>
+            <input matInput digitsOnly placeholder="Ex. 231412">
+          </mat-form-field>
+          <mat-form-field class="w-100">
+            <mat-label>Family income</mat-label>
+            <input matInput digitsOnly placeholder="Ex. 231412">
+          </mat-form-field>
+          <mat-form-field class="w-100">
+            <mat-label>Education Level</mat-label>
+            <mat-select>
+              <mat-option value='0'>None</mat-option>
+              <mat-option>Bachelors</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="w-100">
+            <mat-label>Career name</mat-label>
+            <input matInput placeholder="Ex. 231412">
+          </mat-form-field>
+        </mat-card-content>
+  
+      </mat-card>
+      <mat-card class="card-inner mt-2">
+  
+        <mat-card-header>
+          <mat-card-title>Health status</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-form-field class="w-100">
+            <mat-label>Pain Level</mat-label>
+            <mat-select>
+              <mat-option value='0'>None</mat-option>
+              <mat-option>High</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="w-100">
+            <mat-label>Height</mat-label>
+            <input matInput digitsOnly placeholder="Ex. 231412">
+          </mat-form-field>
+          <mat-form-field class="w-100">
+            <mat-label>Weight</mat-label>
+            <input matInput digitsOnly placeholder="Ex. 231412">
+          </mat-form-field>
+          <mat-form-field class="w-100">
+            <mat-label>BMI</mat-label>
+            <input matInput digitsOnly placeholder="Ex. 231412">
+          </mat-form-field>
+        </mat-card-content>
+  
+      </mat-card>
+    </div>
+    <div class="col-6">
+      <mat-card class="card-inner-2 mt-2">
+  
+        <mat-card-header>
+          <mat-card-title>Health History</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="row my-2 d-flex justify-content-between border-bottom pb-1">
+            <div class="col-4 mt-2">
+              <!-- <genericDD [(selected)]="familyDisSelcted" [showNoneOption]="true" [elements]="familyDis"  [selectLabel]="'Familial diseases'"></genericDD> -->
+            </div>
+            <div (click)="newDis()" class="col-1 mt-4 cursor">
+              <i class="fas fa-plus"></i>
+            </div>
+  
+            <div class="overflow-wrapper col-7">
+              <mat-list>
+                <mat-list-item *ngFor="let dis of fmaiyDisList" class="row">
+                  <div class="col-11">{{dis.text}} </div> <div (click)="removeItem(dis.value)" class="col-1 cursor"><i class="fas fa-trash"></i></div>
+                </mat-list-item>
+              </mat-list>
+          </div>
+          </div>
+          <div class="row my-2 d-flex justify-content-between border-bottom pb-1">
+            <div class="col-4 mt-2">
+              <!-- <genericDD [showNoneOption]="true" [selectLabel]="'Surgical illness'"></genericDD> -->
+            </div>
+  
+            <div class="overflow-wrapper col-7">
+            <mat-list #firstList>
+              <mat-list-item>
+                post-partum hemorrhage
+              </mat-list-item>
+              <mat-list-item>
+                Infections
+              </mat-list-item>
+            </mat-list>
+          </div>
+          </div>
+          <div class="row my-2 d-flex justify-content-between border-bottom pb-1">
+            <div class="col-4 mt-2">
+              <!-- <genericDD [showNoneOption]="true" [selectLabel]="'Internal illness'"></genericDD> -->
+            </div>
+  
+            <div class="overflow-wrapper col-7">
+            <mat-list #firstList>
+              <mat-list-item>
+                Asthma
+              </mat-list-item>
+              <mat-list-item >
+                Bronchitis
+              </mat-list-item>
+              <mat-list-item>
+                Diabetes
+              </mat-list-item>
+            </mat-list>
+          </div>
+          </div>
+          <div class="row my-2 d-flex justify-content-between border-bottom pb-1">
+            <div class="col-4 mt-2">
+              <!-- <genericDD [showNoneOption]="true" [selectLabel]="'Allergies'"></genericDD> -->
+            </div>
+  
+            <div class="overflow-wrapper col-7">
+            <mat-list #firstList>
+              <mat-list-item>
+                Milk
+              </mat-list-item>
+              <mat-list-item>
+                Peanuts
+              </mat-list-item>
+              <mat-list-item>
+                Shellfish
+              </mat-list-item>
+              <mat-list-item>
+                Wheat
+              </mat-list-item>
+            </mat-list>
+          </div>
+          </div>
+  
+          <div class="row my-2 d-flex justify-content-between border-bottom pb-1">
+            <div class="col-4 mt-3">
+              <mat-form-field class="w-100">
+                <mat-label>Surgeries</mat-label>
+                  <input matInput placeholder="Ex. Surgeries">
+              </mat-form-field>
+            </div>
+  
+            <div class="overflow-wrapper col-7">
+            <mat-list #firstList>
+              <mat-list-item>
+                Cataract
+              </mat-list-item>
+              <mat-list-item>
+                Cholecystectomy
+              </mat-list-item>
+              <mat-list-item>
+                Carotid
+              </mat-list-item>
+            </mat-list>
+          </div>
+          </div>
+          <div class="row my-2 d-flex justify-content-between">
+            <div class="col-4 mt-3">
+              <mat-form-field class="w-100">
+                <mat-label>Permanent treatments</mat-label>
+                  <input matInput placeholder="Ex. Surgeries">
+              </mat-form-field>
+            </div>
+  
+            <div class="overflow-wrapper col-7">
+            <mat-list #firstList>
+              <mat-list-item>
+                diabetes
+              </mat-list-item>
+              <mat-list-item>
+                blood pressure
+              </mat-list-item>
+            </mat-list>
+          </div>
+          </div>
+        </mat-card-content>
+  
+      </mat-card>
+    </div>
+  </div>
+  

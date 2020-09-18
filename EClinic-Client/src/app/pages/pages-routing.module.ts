@@ -46,6 +46,20 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'patients',
+        loadChildren: () =>
+          import('../modules/patients/patients.module').then(
+            (m) => m.PatientsModule
+          ),
+      },
+      {
+        path: 'lookups',
+        loadChildren: () =>
+        import('../modules/system-lookups/system-lookups.module').then(
+          (m) => m.SystemLookupsModule
+        )
+      },
+      {
         path: '',
         redirectTo: 'dashboard',
         pathMatch: 'full',

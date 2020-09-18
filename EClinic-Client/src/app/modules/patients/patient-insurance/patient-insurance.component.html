@@ -1,0 +1,56 @@
+<mat-card class="w-100 mt-2">
+
+    <mat-card-header>
+      <mat-card-title>Patient Insurance Information</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="row">
+      <div class="col-6">
+        <!-- <insuranceDD></insuranceDD> -->
+  
+        <mat-form-field class="w-100">
+          <mat-label>Insurance Number</mat-label>
+          <input matInput digitsOnly placeholder="Ex. 231412">
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>Insurance Coverage Inside Hospital %</mat-label>
+          <input matInput digitsOnly placeholder="Ex. 50 %">
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>Insurance Coverage outside Hospital %</mat-label>
+          <input matInput digitsOnly placeholder="Ex. 50 %">
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>طبيعة تحمل كشفية الطبيب</mat-label>
+          <mat-select>
+            <mat-option value='0'>اختر</mat-option>
+            <mat-option>نسبة مئوية</mat-option>
+            <mat-option>مقطوع</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>نسبة تغطية كشفية الطبيب %</mat-label>
+          <input matInput digitsOnly placeholder="Ex. 50 %">
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>Insurance start date</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>Insurance end date</mat-label>
+          <input matInput [matDatepicker]="picker1">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        <div class="w-100">
+          <button mat-raised-button>Select File to Upload</button>
+  
+        </div>
+      </div>
+      <div class="col-6">
+      </div>
+  
+    </mat-card-content>
+  </mat-card>
+  
