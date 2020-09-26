@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AllergiesLookupsComponent } from './allergies-lookups/allergies-lookups.component';
 import { SystemLookupsComponent } from './system-lookups.component';
+import {NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    NgbDropdownModule,
   ]
 })
 export class SystemLookupsModule { }
