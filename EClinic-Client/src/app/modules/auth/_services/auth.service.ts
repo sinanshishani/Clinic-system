@@ -66,6 +66,7 @@ export class AuthService implements OnDestroy {
     this.accountServiceProxy.authenticate(tokenRequest)
     .subscribe(result => {
       if(result.isSuccessful){
+        localStorage.removeItem(AppConsts.authorization.encryptedAuthTokenName);
         localStorage.setItem(AppConsts.authorization.encryptedAuthTokenName, result.data.token);
       }else{
         localStorage.removeItem(AppConsts.authorization.encryptedAuthTokenName);

@@ -15,6 +15,13 @@ export const DynamicHeaderMenuConfig = {
       translate: 'MENU.PATIENTS',
     },
     {
+      title : 'System Lookups',
+      root: true,
+      alignment: 'left',
+      page: '/lookups',
+      translate: 'MENU.LOOKUPS',
+    },
+    {
       title: 'Builder',
       root: true,
       alignment: 'left',

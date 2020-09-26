@@ -72,7 +72,7 @@ export function tokenGetter() {
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
-        allowedDomains: [AppConsts.remoteServiceBaseUrl],
+        allowedDomains: [AppConsts.remoteServiceBaseUrl,"localhost:4000","http://localhost:4000/"],
         disallowedRoutes: ["http://example.com/examplebadroute/"],
       },
     }),

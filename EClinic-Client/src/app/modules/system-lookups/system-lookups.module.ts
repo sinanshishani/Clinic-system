@@ -16,7 +16,7 @@ const routes: Routes = [
   ];
 
 @NgModule({
-  declarations: [SystemLookupsComponent],
+  declarations: [SystemLookupsComponent, AllergiesLookupsComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

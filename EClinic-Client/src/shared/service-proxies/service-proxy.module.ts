@@ -16,6 +16,7 @@ import { AppConsts } from '../AppConsts';
     ApiServiceProxies.AccountSurgeryProceduresServiceProxy,
     ApiServiceProxies.PatientsServiceProxy,
     ApiServiceProxies.HospitalsServiceProxy,
+    ApiServiceProxies.AccountAllergicsServiceProxy,
     { provide: API_BASE_URL, useFactory: () => AppConsts.remoteServiceBaseUrl },
 ]
 })
